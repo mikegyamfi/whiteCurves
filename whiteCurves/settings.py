@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'shark-app-ygywo.ondigitalocean.app',
+    'www.wcconsult.ltd',
+    'wcconsult.ltd',
 ]
 
 
