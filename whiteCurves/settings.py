@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'shark-app-ygywo.ondigitalocean.app',
     'www.wcconsult.ltd',
     'wcconsult.ltd',
+    '127.0.0.1'
 ]
 
 

@@ -884,6 +884,11 @@ input[type=number] {
 	color: grey;
 }
 
+	.image-container img{
+		width: 100%;
+		height: 400px;
+	}
+
 /*.honeymoon-header-content{*/
 /*	padding: 100px 0;*/
 /*}*/
@@ -2576,5 +2581,10 @@ a:hover.back-to-top {
 		height: 100%;
 		width: 100%;
 		object-fit: contain;
+	}
+
+	.image-container img{
+		width: 100%;
+		height: 300px;
 	}
 }
