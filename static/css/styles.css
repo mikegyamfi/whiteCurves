@@ -845,8 +845,9 @@ input[type=number] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/airplane-overlay.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/plane-fig.png') center center no-repeat;
 	background-size: cover;
+	background-position: left;
 }
 
 .service-header{
