@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ay$+70s6i#yb-elhj35u3i&lom3#*-8&p3zs+nx@vu9_atl6y*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-
+    'shark-app-ygywo.ondigitalocean.app',
 ]
 
 
