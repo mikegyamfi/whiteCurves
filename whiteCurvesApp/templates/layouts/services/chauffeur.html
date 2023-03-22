@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Chauffeur Services - White Curves Consult Ltd.
+{% endblock %}
+{% block content %}
+
+    {% include 'inc/navbar.html' %}
+
+    <!-- Header -->
+    <header id="header" class="service-header">
+        <div class="header-content">
+            <div class="container">
+            <div class="row">
+                <div class="honeymoon-header-content">
+                    <h1 style="color: white">Chauffeur Services</h1>
+{#                    <p style="color: white">Thinking about where and how your honeymoon should go?</p>#}
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container --> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="container py-lg-5 py-4">
+        <div class="service-p">
+            <p class="service-p">
+                In ensuring customer satisfaction, comfortability and safety, we provide excellent car rental services with vehicles ranging from:
+                <br><br>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/esc.png' %}" alt="">
+                    <p class="caption">SUV</p>
+                </div>
+
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/van.png' %}" alt="">
+                    <p class="caption">Vans</p>
+                </div>
+{#                <ol>#}
+{#                    <li>Buses</li>#}
+{#                    <li>SUVs</li>#}
+{#                    <li>Vans</li>#}
+{#                </ol>#}
+                <br><br>These vehicles are in their best shape to ensure safe and sound journeys.
+
+                <br><br>We also have professional licensed drivers to take you to your destinations.
+
+                <br><br>Look no where else. White Curves Consult is your one stop point for your payed vehicle.
+
+            </p>
+        </div>
+    </div>
+
+    {% include 'inc/footer.html' %}
+
+
+{% endblock content %}

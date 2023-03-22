@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Nursing Opportunities & Internships - White Curves Consult Ltd.
+{% endblock %}
+{% block content %}
+
+    {% include 'inc/navbar.html' %}
+
+    <!-- Header -->
+    <header id="header" class="service-header">
+        <div class="header-content">
+            <div class="container">
+            <div class="row">
+                <div class="honeymoon-header-content">
+                    <h1 style="color: white">Nursing Opportunities & Internships</h1>
+{#                    <p style="color: white">Thinking about where and how your honeymoon should go?</p>#}
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container --> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="container py-lg-5 py-4">
+        <div class="service-p">
+            <p class="service-p">
+                Nursing students who wish to have clinical practicum or exchange programs in Europe are warmly welcomed.
+                White Curves Consult has partnership with health facilities in Europe for nursing students to broaden their knowledge but also gives such students the opportunity to learn different cultures and explore greater opportunities like writing of NCLEX and building resume.
+                Our firm aids in receiving the offer:
+                <br><br>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/vis.png' %}" alt="">
+                    <p class="caption">Visa Acquisition</p>
+                </div>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/accommodation.png' %}" alt="">
+                    <p class="caption">Accommodation</p>
+                </div>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/flight.png' %}" alt="">
+                    <p class="caption">Flight</p>
+                </div>
+{#                <ol>#}
+{#                    <li>Visa Acquisition</li>#}
+{#                    <li>Accommodation</li>#}
+{#                    <li>Flight</li>#}
+{#                    <li>Stipends</li>#}
+{#                </ol>#}
+                <br><br>Yes! Stipends. Students enjoying in this internship programs are paid.
+            This opportunity is too great to miss. <a href="{% url 'application' %}">Register</a> now and we will gladly turn your dreams into experience.
+            </p>
+        </div>
+    </div>
+
+    {% include 'inc/footer.html' %}
+
+
+{% endblock content %}

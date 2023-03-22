@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Vacation & Honeymoon Application - White Curves Consult
+{% endblock %}
+{% block content %}
+
+    {% include 'inc/navbar.html' %}
+
+    <!-- Header -->
+    <header id="header" class="service-header">
+        <div class="header-content">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-lg-5 py-4">
+                    <h1 style="color: white">Vacation and Honeymoon Application</h1>
+                    <p style="color: white">You are required to fill out every field in the form. Every field is required and failure to fill any of the fields will prevent you from submitting the form for the commencement of the following processes.</p>
+                     <p style="color: white">Want to apply for work or education? Click on the button below to apply.</p>
+                     <a style="color: white" class="btn-solid-lg" href="{% url 'application' %}">Work & Study Application</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container --> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <div class="container">
+        <div class="application-div">
+            <form method="post" action="">
+                {% csrf_token %}
+              <div class="form-row">
+                <div class="form-group col-md-6 form-input">
+                  <label for="firstName">First Name</label>
+                  {{ form.first_name }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="lastName">Last Name</label>
+                    {{ form.last_name }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="inputEmail4">Email</label>
+                  {{ form.email }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="address">Address</label>
+                  {{ form.address }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="country">Country</label>
+                  {{ form.country }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                    <label for="phone">Phone Number</label>
+                    {{ form.phone_number }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="destination">Preferred Destination</label>
+                  {{ form.preferred_destination }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="weeks">Number of weeks</label>
+                  {{ form.number_of_weeks }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="start_date">Start Date</label>
+                  {{ form.start_date }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="end_date">End Date</label>
+                  {{ form.end_date }}
+                </div>
+                <div class="form-group col-md-6 form-input">
+                  <label for="num_of_persons">Number of Persons</label>
+                  {{ form.number_of_persons }}
+                </div>
+              </div>
+              <button type="submit" class="btn-solid-lg">Apply</button>
+            </form>
+        </div>
+    </div>
+
+
+    {% include 'inc/footer.html' %}
+
+
+{% endblock content %}

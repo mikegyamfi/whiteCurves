@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Vacation & Honeymoon - White Curves Consult Ltd.
+{% endblock %}
+{% block content %}
+
+    {% include 'inc/navbar.html' %}
+
+    <!-- Header -->
+    <header id="header" class="service-header">
+        <div class="header-content">
+            <div class="container">
+            <div class="row">
+                <div class="honeymoon-header-content">
+                    <h1 style="color: white">Vacation & HoneyMoon</h1>
+{#                    <p style="color: white">Thinking about where and how your honeymoon should go?</p>#}
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container --> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="container py-lg-5 py-4">
+        <div class="service-p">
+            <p class="service-p">
+                Honeymoon is an integral part of ones' marriage life, and it is important to make the best memories out of it. WCCL has a wide range of packages to suit your dreams and pocket as well. From local to international trips with varieties of:
+                <br><br>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/resort.png' %}" alt="">
+                    <p class="caption">Resorts</p>
+                </div>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/villa.png' %}" alt="">
+                    <p class="caption">Villas</p>
+                </div>
+                <div class="service-img-cont">
+                    <img class="service-img" src="{% static 'images/city.png' %}" alt="">
+                    <p class="caption">Cities</p>
+                </div>
+{#                <ol>#}
+{#                    <li>Resorts</li>#}
+{#                    <li>Villas</li>#}
+{#                    <li>Cities</li>#}
+{#                    <li>Spas</li>#}
+{#                </ol>#}
+                <br><br>It can be sometimes tedious to choose and prepare for a suitable one. Even the most real honeymoons can require significant planning and inquires and when planning your most anticipated weddings, the thought of planning another event right after can be daunting.
+
+                <br><br>WCCL is here to design a perfect trip for you and your spouse so that you will rest, eat, love, play and admire each other in a memorable environment whether within or outside your country.
+
+                <br><br>Take the opportunity to meet travel professionals, destination marriage advisers, marriage quotes and focus on love retreats daily to work with your ideal honeymoon vision and budget to suggest perfect activities.
+
+                <br><br>White Curves Consult offers an unrivaled tour service in Ghana to a destination of your choice. Being a new and modern travel and tour agency, we understand the emerging trends in this field and offer excellent services that demonstrate our value for money. We arrange:
+                <br><br>
+                <ol>
+                    <li>Educational Tours</li>
+                    <li>Organizational Tours</li>
+                </ol>
+                around the country and beyond.
+                <br><br>Customer satisfaction is of prime importance to us, and so we have the best team of professionals to ensure your safety, comfortability and above all ultimate fulfillment.
+                <br><br>Are you planning a tour with your organization? We are here to deliver our best from start to finish.
+
+            </p>
+        </div>
+    </div>
+
+    {% include 'inc/footer.html' %}
+
+
+{% endblock content %}
