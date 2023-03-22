@@ -1,0 +1,18 @@
+<p>
+        Thank you for contacting the white curves consult Ltd. <br> <br>
+        We acknowledge receipt of your email and a reply will be sent within 48 hours. 
+        <br><br>
+        Many thanks!
+
+        <hr style="width: 60%; height: 5px; background-color: #1B5667;">
+        <h2>White Curves Consult Ltd.</h2>
+        <img style="width: 100px; height: 100px;" src="https://www.wcconsult.ltd/static/images/favicon.png" alt="">
+
+        <p>
+            +447541994245 <br>
+            Silver Royd Hill Armley, Leeds LS12 4QQ <br>
+            Leeds, Leeds LS12 <br>
+            http://www.wcconsult.ltd
+        </p>
+
+    </p>
