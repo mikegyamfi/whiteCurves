@@ -2587,4 +2587,13 @@ a:hover.back-to-top {
 		width: 100%;
 		height: 300px;
 	}
+
+	.navbar-custom {
+    	background-color: transparent;
+	}
+
+	.navbar-collapse{
+		background-color: #000000;
+		opacity: 95%;
+	}
 }
