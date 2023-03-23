@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Vacation & Honeymoon - White Curves Consult Ltd.
+{% endblock %}
+{% block content %}
+
+    {% include 'inc/navbar.html' %}
+
+    <!-- Header -->
+    <header id="header" class="service-header">
+        <div class="header-content">
+            <div class="container">
+            <div class="row">
+                <div class="honeymoon-header-content">
+                    <h1 style="color: white">Application Form Submitted Successful</h1>
+{#                    <p style="color: white">Thinking about where and how your honeymoon should go?</p>#}
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container --> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="container py-lg-5 py-4">
+        <div class="service-p">
+            <p class="service-p">
+                Thank you for filling out the form. Within the next few minutes you will receive a confirmation email showing we have received your application.
+            </p>
+        </div>
+    </div>
+
+    {% include 'inc/footer.html' %}
+
+
+{% endblock content %}

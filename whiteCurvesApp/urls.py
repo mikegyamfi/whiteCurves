@@ -10,4 +10,5 @@ urlpatterns = [
     path('services/honeymoon', views.honeymoon, name="honeymoon"),
     path('services/chauffeur', views.chauffeur, name='chauffeur'),
     path('services/nursing_opportunities_and_internships', views.internship, name='internship'),
+    path('success', views.success, name="success"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -87,20 +87,20 @@ def application(request):
 def vac_hm_application(request):
     application_form = forms.VacRegistrationForm()
     if request.method == "POST":
-        form = forms.VacRegistrationForm(request.POST)
-        if form.is_valid():
-            first_name = str(form.cleaned_data["first_name"])
-            last_name = str(form.cleaned_data["last_name"])
-            email = str(form.cleaned_data["email"])
-            country = str(form.cleaned_data["country"])
-            address = str(form.cleaned_data["address"])
-            phone_number = str(form.cleaned_data["phone_number"])
+        application_form = forms.VacRegistrationForm(request.POST)
+        if application_form.is_valid():
+            first_name = str(application_form.cleaned_data["first_name"])
+            last_name = str(application_form.cleaned_data["last_name"])
+            email = str(application_form.cleaned_data["email"])
+            country = str(application_form.cleaned_data["country"])
+            address = str(application_form.cleaned_data["address"])
+            phone_number = str(application_form.cleaned_data["phone_number"])
             applicant_id = helper.generate_applicant_id()
-            preferred_destination = str(form.cleaned_data["preferred_destination"])
-            num_of_weeks = str(form.cleaned_data["number_of_weeks"])
-            start_date = form.cleaned_data["start_date"]
-            end_date = form.cleaned_data["end_date"]
-            num_of_persons = form.cleaned_data["number_of_persons"]
+            preferred_destination = str(application_form.cleaned_data["preferred_destination"])
+            num_of_weeks = str(application_form.cleaned_data["number_of_weeks"])
+            start_date = application_form.cleaned_data["start_date"]
+            end_date = application_form.cleaned_data["end_date"]
+            num_of_persons = application_form.cleaned_data["number_of_persons"]
 
             try:
                 sg = SendGridAPIClient(config("SENDGRID_API_KEY"))
@@ -169,4 +169,5 @@ def internship(request):
     return render(request, 'layouts/services/internship.html')
 
 
-
+def success(request):
+    return render(request, "layouts/success.html")
