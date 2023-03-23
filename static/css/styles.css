@@ -854,6 +854,12 @@ input[type=number] {
 	text-align: left;
 }
 
+.success-header{
+	background-color: transparent;
+	color: black;
+	text-align: left;
+}
+
 .service-p{
 	font-size: 18px;
 }
