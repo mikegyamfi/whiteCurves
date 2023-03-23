@@ -860,6 +860,11 @@ input[type=number] {
 	text-align: left;
 }
 
+.success-header .header-content{
+	padding: 8rem 10px 2.125rem;
+	color: black;
+}
+
 .service-p{
 	font-size: 18px;
 }
