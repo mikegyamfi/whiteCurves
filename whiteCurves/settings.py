@@ -47,10 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whiteCurvesApp',
-    'sweetify',
 ]
-
-SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert'
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)

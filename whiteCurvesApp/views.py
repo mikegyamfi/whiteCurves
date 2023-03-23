@@ -13,8 +13,6 @@ from sendgrid.helpers.mail import Mail, Email, To, Content
 
 # Create your views here.
 def index(request):
-    if request.method == "POST":
-        sweetify.success(request, 'Registration Successful')
     return render(request, "layouts/index.html")
 
 
