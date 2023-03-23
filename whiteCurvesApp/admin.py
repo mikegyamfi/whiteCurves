@@ -9,6 +9,11 @@ class RegistrationAdmin(admin.ModelAdmin):
     search_fields = ["applicant_id", "first_name", "last_name", "email"]
 
 
+class VacAndHoneymoonRegistrationAdmin(admin.ModelAdmin):
+    list_display = ["applicant_id", "first_name", "last_name", "email", "phone_number"]
+    search_fields = ["applicant_id", "first_name", "last_name", "email"]
+
+
 admin.site.register(models.Registration, RegistrationAdmin)
-admin.site.register(models.VacAndHoneymoonRegistration)
+admin.site.register(models.VacAndHoneymoonRegistration, VacAndHoneymoonRegistrationAdmin)
 
