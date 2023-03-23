@@ -1,4 +1,5 @@
 import requests
+import sweetify
 from decouple import config
 from django.forms import models
 from django.http import HttpResponse
@@ -12,6 +13,8 @@ from sendgrid.helpers.mail import Mail, Email, To, Content
 
 # Create your views here.
 def index(request):
+    if request.method == "POST":
+        sweetify.success(request, 'You successfully changed your password')
     return render(request, "layouts/index.html")
 
 
