@@ -18,6 +18,7 @@
                             <h1>We believe in your <span id="js-rotating">Dreams, Aspirations, Efforts</span></h1>
                             <p class="p-heading p-large">We are here to turn your dreams into experience.</p>
                             <form method="post" action="">
+                                {% csrf_token %}
                                 <button type="submit" class="btn-solid-lg page-scroll" href="#intro">DISCOVER</button>
                             </form>
                         </div>
