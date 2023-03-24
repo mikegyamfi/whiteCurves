@@ -1,6 +1,7 @@
 import requests
 import sweetify
 from decouple import config
+from django.contrib import messages
 from django.forms import models
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -80,7 +81,8 @@ def application(request):
 
             response = requests.request("GET", url)
             print(response.text)
-    #         print(f"{first_name}\n{last_name}\n{email}\n{phone_number}\n{level_of_education}\n{area_of_interest}")
+
+            messages.success(request, "Thank you for filling the form. Within the next few minutes you will receive a confirmation email showing we have received your application.")
     context = {'form': application_form}
     return render(request, "layouts/registration-form.html", context=context)
 
@@ -153,6 +155,8 @@ def vac_hm_application(request):
 
             response = requests.request("GET", url)
             print(response.text)
+
+            messages.success(request, "Thank you for filling the form. Within the next few minutes you will receive a confirmation email showing we have received your application.")
 
     context = {'form': application_form}
     return render(request, "layouts/services/vac-hm-application.html", context=context)
