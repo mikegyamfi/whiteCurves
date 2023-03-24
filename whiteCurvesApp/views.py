@@ -1,9 +1,7 @@
 import requests
-import sweetify
 from decouple import config
 from django.contrib import messages
 from django.forms import models
-from django.http import HttpResponse
 from django.shortcuts import render
 from whiteCurvesApp import forms
 from . import helper, models
